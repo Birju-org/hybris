@@ -4,7 +4,7 @@ sh 'unzip -n /home/hybris/hybris-commerce-suite-6.2.0.0-COMM.zip'
 }
 
 stage('Build section'){
-  dir(hybris/bin/platform) {
+  dir('hybris/bin/platform') {
   sh '. ./setantenv.sh'
   sh 'ant clean all'
   }
